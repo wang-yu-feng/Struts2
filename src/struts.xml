@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="struts" namespace="/" extends="struts-default">
+		<action name="login" class="com.wyf.action.LoginAction" method="login">
+			<result name="success" type="chain">findStudentList</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="logout" class="com.wyf.action.LoginAction" method="logout">
+			<result name="logout">/login.jsp</result>
+		</action>
+		<!-- 查找所有学生信息 -->
+		<action name="findStudentList" class="com.wyf.action.WelcomeAction" method="findStudentList">
+			<result name="success">/welcome.jsp</result>
+		</action>
+	</package>
+</struts>    

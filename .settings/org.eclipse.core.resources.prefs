@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//WebRoot/login.jsp=UTF-8
+encoding//WebRoot/welcome.jsp=UTF-8
+encoding//src/com/wyf/base/util/ATTSystem.java=UTF-8
+encoding//src/com/wyf/base/util/AuthCodeServlet.java=UTF-8
+encoding//src/com/wyf/base/util/DBUtil.java=UTF-8
+encoding//src/com/wyf/base/util/MD0Util.java=UTF-8
+encoding//src/com/wyf/base/util/MD5Util.java=UTF-8
