@@ -4,8 +4,10 @@ $(document).ready(function(){
 	
 	for(var i = 0;i<arrCookies.length;i++){
 		arr = arrCookies[i].split("=");
+		if(arr[1]!=null){
+			$("input[name='userName']").val(arr[1]);
+		}
 		
-		alert(arr[1]);
 	}
 });
 
@@ -15,6 +17,6 @@ $(document).on('click','#button',function(){
 		var password = $("input[name='password']").val();
 		
 		document.cookie = "userName="+userName+";password="+password;
-		alert(document.cookie.split(";")[0].split("=")[1]);
+		/*alert(document.cookie.split(";")[0].split("=")[1]);*/
 	}
 });
