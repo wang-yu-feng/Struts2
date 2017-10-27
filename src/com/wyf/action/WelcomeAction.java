@@ -2,6 +2,7 @@ package com.wyf.action;
 
 import java.util.List;
 
+
 import com.opensymphony.xwork2.ActionSupport;
 import com.wyf.entity.Student;
 import com.wyf.service.StudentService;
@@ -14,6 +15,7 @@ public class WelcomeAction extends ActionSupport {
 	public String findStudentList(){
 		StudentService studentService = new StudentServiceImpl();
 		stuList = studentService.findStudentList();
+		
 		return SUCCESS;
 	} 
 	

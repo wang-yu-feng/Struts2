@@ -1,3 +1,4 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -10,8 +11,9 @@
 	href="./Wopop_files/userpanel.css" />
 <link rel="stylesheet" type="text/css"
 	href="./Wopop_files/jquery.ui.all.css" />
-	<script type="text/javascript" src="/js/login.js"></script>
+	
 <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js/login.js"></script>
 
 </head>
 

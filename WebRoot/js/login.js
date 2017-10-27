@@ -1,6 +1,20 @@
 $(document).ready(function(){
-	alert("111");
+	var arr;
+	var arrCookies = document.cookie.split(";");
+	
+	for(var i = 0;i<arrCookies.length;i++){
+		arr = arrCookies[i].split("=");
+		
+		alert(arr[1]);
+	}
+});
+
+$(document).on('click','#button',function(){
 	if($("input[type='checkbox']").is(':checked')==true){
-		alert("aa");
+		var userName = $("input[name='userName']").val();
+		var password = $("input[name='password']").val();
+		
+		document.cookie = "userName="+userName+";password="+password;
+		alert(document.cookie.split(";")[0].split("=")[1]);
 	}
 });
